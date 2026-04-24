@@ -8,6 +8,7 @@ pipeline {
         DOCKER_USER = "docdon0007"
         IMAGE = "model"
         TAG = "${env.BRANCH_NAME ?: 'latest'}"
+        PATH = "/Users/eazyfixit/.pyenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
     }
 
