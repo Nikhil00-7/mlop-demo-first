@@ -3,11 +3,14 @@ pipeline {
     agent any
  
 
- 
+     tools{
+        python "python"
+     }
     environment {
         DOCKER_USER = "docdon0007"
         IMAGE = "model"
         TAG = "${env.BRANCH_NAME ?: 'latest'}"
+        PATH="/usr/local/bin/python3"
     }
 
     options {
