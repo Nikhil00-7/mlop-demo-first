@@ -2,9 +2,8 @@ pipeline {
 
     agent any
  
-    tools{
-        python "python"
-    }
+
+ 
     environment {
         DOCKER_USER = "docdon0007"
         IMAGE = "model"
